@@ -27,7 +27,7 @@ jobs:
         echo "TEST_BASE_URL: $TEST_BASE_URL"
         echo "VIKUNJA_TEST_LOGIN: $VIKUNJA_TEST_LOGIN"
         echo "VIKUNJA_TEST_PASS: $VIKUNJA_TEST_PASS"
-        cat $ENV_FILE >> .env
+        echo $ENV_FILE >> .env
         echo 'В .env'
         cat .env
       env:
